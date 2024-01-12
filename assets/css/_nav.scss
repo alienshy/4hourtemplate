@@ -1,0 +1,36 @@
+nav{
+    background-color:#0d2d3e;
+    width: 100%;
+    .navcon{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .clock{
+            display: flex;
+            padding: 20px 0;
+            gap: 20px;
+            align-items: center;
+            i{
+                color: red;
+            }
+            p{
+                font-size: 13px;
+                color: white;
+            }
+        }
+        .ivis{
+            padding: 20px 0;
+            display: flex;
+            gap: 10px;
+            i{
+                font-size: 20px;
+                color: white;
+            }
+        }
+    }
+}
+@media screen and (max-width:900px){
+    nav{
+        display: none;
+   }
+}

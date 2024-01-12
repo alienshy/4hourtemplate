@@ -1,0 +1,27 @@
+.section2{
+    width: 100%;
+    .section2con{
+        width: 100%;
+        padding: 100px 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        div{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .hr{
+                width: 40px;
+                height: 2px;
+            }
+            p{
+                color: red;
+            }
+        }
+        h1{
+            color: rgb(26, 26, 77);
+            font-size: 70px;
+        }
+
+    }
+}

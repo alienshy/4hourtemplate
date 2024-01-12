@@ -1,0 +1,81 @@
+section{
+    background-image: url('../image/h1_hero.jpg');
+    background-size: cover;
+    .sectioncon{
+        width: 100%;
+    .sectioncard{
+        padding: 200px 80px;
+        opacity: 0.8;
+        div{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            color: red;
+            hr{
+                background-color: red;
+                height: 2px;
+                width: 40px;
+            }
+
+        }
+        width: 70%;
+        flex-direction: column;
+        display: flex;
+        gap: 30px;
+        h1{
+            font-size: 80px;
+            font-weight: 900;
+        }
+        .ptextheader{
+            font-size: 20px;
+        }
+        button{
+            width: 200px;
+            height: 50px;
+            background-color: red;
+            border: none;
+            color: white;
+            font-size: 16px;
+            transition: 0.3s ease;
+        &:hover{
+            background-color: white;
+            color: black;
+        }
+        }
+    }
+}}
+@media screen and (max-width:900px){
+    section{
+        .sectioncon{
+            width: 100%;
+        .sectioncard{
+            padding: 50px 10px;
+            opacity: 0.8;
+            width: 100%;
+            flex-direction: column;
+            display: flex;
+            gap: 30px;
+            h1{
+                font-size: 50px;
+                font-weight: 900;
+            }
+            .ptextheader{
+                font-size: 20px;
+            }
+            button{
+                width: 200px;
+                height: 50px;
+                background-color: red;
+                border: none;
+                color: white;
+                font-size: 16px;
+                transition: 0.3s ease;
+            &:hover{
+                background-color: white;
+                color: black;
+            }
+            }
+        }
+    }}
+    
+}

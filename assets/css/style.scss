@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.con{
+    margin: 0 auto;
+    padding: 0 32px;
+    max-width: 1200px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+@mixin center{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+@mixin calc {
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+}
+.hr{
+    border: 2px solid red;
+}
+
+@import 'nav';
+@import 'header';
+@import 'section';
+@import 'section2';
+@import 'cards';
+@import 'cardsdet';

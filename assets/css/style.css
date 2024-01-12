@@ -1,0 +1,425 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.con {
+  margin: 0 auto;
+  padding: 0 32px;
+  max-width: 1200px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.hr {
+  border: 2px solid red;
+}
+
+nav {
+  background-color: #0d2d3e;
+  width: 100%;
+}
+nav .navcon {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+nav .navcon .clock {
+  display: flex;
+  padding: 20px 0;
+  gap: 20px;
+  align-items: center;
+}
+nav .navcon .clock i {
+  color: red;
+}
+nav .navcon .clock p {
+  font-size: 13px;
+  color: white;
+}
+nav .navcon .ivis {
+  padding: 20px 0;
+  display: flex;
+  gap: 10px;
+}
+nav .navcon .ivis i {
+  font-size: 20px;
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    display: none;
+  }
+}
+header {
+  width: 100%;
+}
+header .headercon {
+  display: flex;
+  justify-content: space-between;
+}
+header .headercon .headerimg {
+  width: 150px;
+  padding: 20px 0px;
+  height: 100px;
+}
+header .headercon .headerimg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header .headercon ul {
+  width: 50%;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+header .headercon ul a {
+  color: #0d2d3e;
+  font-weight: 400;
+  font-size: 20px;
+}
+header .headercon .menu {
+  display: none;
+  padding: 20px 0;
+  align-items: center;
+  gap: 10PX;
+}
+header .headercon .menu .bi-list {
+  color: #0d2d3e;
+  font-size: 40px;
+}
+header .headercon .menu p {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  header .headercon {
+    background-color: #942f00;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  header .headercon .headerimg {
+    width: 100%;
+    margin-top: -100px;
+  }
+  header .headercon .headerimg img {
+    width: 40%;
+  }
+  header .headercon ul {
+    display: none;
+  }
+  header .headercon ul a {
+    color: #0d2d3e;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  header .headercon .menu {
+    background-color: #942f00;
+    display: flex;
+    padding: 10px;
+    justify-content: flex-end;
+  }
+  header .headercon .menu p {
+    font-size: 20px;
+  }
+  header .headercon .menu .bi-list {
+    display: block;
+  }
+}
+section {
+  background-image: url("../image/h1_hero.jpg");
+  background-size: cover;
+}
+section .sectioncon {
+  width: 100%;
+}
+section .sectioncon .sectioncard {
+  padding: 200px 80px;
+  opacity: 0.8;
+  width: 70%;
+  flex-direction: column;
+  display: flex;
+  gap: 30px;
+}
+section .sectioncon .sectioncard div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: red;
+}
+section .sectioncon .sectioncard div hr {
+  background-color: red;
+  height: 2px;
+  width: 40px;
+}
+section .sectioncon .sectioncard h1 {
+  font-size: 80px;
+  font-weight: 900;
+}
+section .sectioncon .sectioncard .ptextheader {
+  font-size: 20px;
+}
+section .sectioncon .sectioncard button {
+  width: 200px;
+  height: 50px;
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+section .sectioncon .sectioncard button:hover {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 900px) {
+  section .sectioncon {
+    width: 100%;
+  }
+  section .sectioncon .sectioncard {
+    padding: 50px 10px;
+    opacity: 0.8;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    gap: 30px;
+  }
+  section .sectioncon .sectioncard h1 {
+    font-size: 50px;
+    font-weight: 900;
+  }
+  section .sectioncon .sectioncard .ptextheader {
+    font-size: 20px;
+  }
+  section .sectioncon .sectioncard button {
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s ease;
+  }
+  section .sectioncon .sectioncard button:hover {
+    background-color: white;
+    color: black;
+  }
+}
+.section2 {
+  width: 100%;
+}
+.section2 .section2con {
+  width: 100%;
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.section2 .section2con div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.section2 .section2con div .hr {
+  width: 40px;
+  height: 2px;
+}
+.section2 .section2con div p {
+  color: red;
+}
+.section2 .section2con h1 {
+  color: rgb(26, 26, 77);
+  font-size: 70px;
+}
+
+.cards {
+  width: 100%;
+}
+.cards .searchdiv {
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.cards .searchdiv input {
+  border-radius: 20px;
+  padding: 10px 20px;
+  outline: none;
+  font-size: 20px;
+}
+.cards .searchdiv select {
+  background-color: green;
+  width: 180px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  outline: none;
+  font-size: 20px;
+  color: white;
+}
+.cards .cardscon {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.cards .cardscon .card {
+  max-width: calc(33% - 20px);
+  flex: 1 1 calc(33% - 20px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+  transition: 0.5s ease;
+}
+.cards .cardscon .card:hover {
+  background-color: red;
+}
+.cards .cardscon .card:hover i {
+  color: rgb(255, 255, 255);
+}
+.cards .cardscon .card i {
+  font-size: 50px;
+  color: red;
+}
+.cards .cardscon .card h2 {
+  color: rgb(26, 26, 77);
+}
+.cards .cardscon .card p {
+  text-align: center;
+  color: rgb(157, 156, 156);
+}
+.cards .cardscon .card .cardscrud {
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+}
+.cards .cardscon .card .cardscrud i {
+  color: blue;
+  font-size: 20px;
+}
+.cards .cardscon .card .cardscrud i:hover {
+  color: rgb(255, 255, 255);
+}
+.cards .cardscon .card .cardscrud button {
+  width: 120px;
+  display: flex;
+  background-color: yellow;
+  border-radius: 20px;
+  font-size: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: none;
+}
+.cards .cardscon .card .cardscrud button:hover {
+  background-color: green;
+}
+
+@media screen and (max-width: 1100px) {
+  .cards .cardscon .card {
+    max-width: calc(50% - 20px);
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .cards .cardscon .card {
+    max-width: calc(100% - 20px);
+    flex: 100%;
+  }
+}
+.cardsdet {
+  width: 100%;
+}
+.cardsdet .cardscon {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  gap: 20px;
+}
+.cardsdet .cardscon .card {
+  max-width: calc(50% - 20px);
+  flex: 1 1 calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+  transition: 0.5s ease;
+}
+.cardsdet .cardscon .card:hover {
+  background-color: red;
+}
+.cardsdet .cardscon .card:hover i {
+  color: rgb(255, 255, 255);
+}
+.cardsdet .cardscon .card i {
+  font-size: 50px;
+  color: red;
+}
+.cardsdet .cardscon .card h2 {
+  color: rgb(26, 26, 77);
+}
+.cardsdet .cardscon .card p {
+  text-align: center;
+  color: rgb(157, 156, 156);
+}
+.cardsdet .cardscon .card .cardscrud {
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+}
+.cardsdet .cardscon .card .cardscrud i {
+  color: blue;
+  font-size: 20px;
+}
+.cardsdet .cardscon .card .cardscrud i:hover {
+  color: rgb(255, 255, 255);
+}
+.cardsdet .cardscon .card .cardscrud button {
+  width: 120px;
+  display: flex;
+  background-color: yellow;
+  border-radius: 20px;
+  font-size: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: none;
+}
+.cardsdet .cardscon .card .cardscrud button:hover {
+  background-color: green;
+}
+
+@media screen and (max-width: 1100px) {
+  .cardsdet .cardscon .card {
+    max-width: calc(50% - 20px);
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .cardsdet .cardscon .card {
+    max-width: calc(100% - 20px);
+    flex: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
